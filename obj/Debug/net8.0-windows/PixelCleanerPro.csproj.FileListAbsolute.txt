@@ -1,0 +1,5 @@
+C:\Users\MrPixel555\Desktop\New folder (8)\PixelCleanerPro\obj\Debug\net8.0-windows\PixelCleanerPro.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MrPixel555\Desktop\New folder (8)\PixelCleanerPro\obj\Debug\net8.0-windows\PixelCleanerPro.AssemblyInfoInputs.cache
+C:\Users\MrPixel555\Desktop\New folder (8)\PixelCleanerPro\obj\Debug\net8.0-windows\PixelCleanerPro.AssemblyInfo.cs
+C:\Users\MrPixel555\Desktop\New folder (8)\PixelCleanerPro\obj\Debug\net8.0-windows\PixelCleanerPro.csproj.CoreCompileInputs.cache
+C:\Users\MrPixel555\Desktop\New folder (8)\PixelCleanerPro\obj\Debug\net8.0-windows\PixelCleanerPro.sourcelink.json

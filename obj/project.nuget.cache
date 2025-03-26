@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "+fs7Rm2+B3eJVniPHGlP7jhTr/g60dTEK5pMDd6MqIVlI203ha+QviYKQ2/0/Mw+h4esQcP4cY/JiPKhoooU/Q==",
+  "success": true,
+  "projectFilePath": "F:\\PixelCleanerPro\\PixelCleanerPro 1.0.0.6.29\\PixelCleanerPro.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MrPixel555\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\MrPixel555\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net48\\1.0.3\\microsoft.netframework.referenceassemblies.net48.1.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

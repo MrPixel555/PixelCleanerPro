@@ -1,0 +1,35 @@
+C:\Users\MrPixel555\Desktop\New folder (8)\PixelCleanerPro\obj\Debug\net48\PixelCleanerPro.csproj.AssemblyReference.cache
+C:\Users\MrPixel555\Desktop\New folder (8)\PixelCleanerPro\obj\Debug\net48\PixelCleanerPro.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MrPixel555\Desktop\New folder (8)\PixelCleanerPro\obj\Debug\net48\PixelCleanerPro.AssemblyInfoInputs.cache
+C:\Users\MrPixel555\Desktop\New folder (8)\PixelCleanerPro\obj\Debug\net48\PixelCleanerPro.AssemblyInfo.cs
+C:\Users\MrPixel555\Desktop\New folder (8)\PixelCleanerPro\obj\Debug\net48\PixelCleanerPro.csproj.CoreCompileInputs.cache
+C:\Users\MrPixel555\Desktop\New folder (8)\PixelCleanerPro\obj\Debug\net48\PixelCleanerPro.sourcelink.json
+C:\Users\MrPixel555\Desktop\New folder (8)\PixelCleanerPro\bin\Debug\net48\app.manifest
+C:\Users\MrPixel555\Desktop\New folder (8)\PixelCleanerPro\bin\Debug\net48\PixelCleanerPro.exe.config
+C:\Users\MrPixel555\Desktop\New folder (8)\PixelCleanerPro\bin\Debug\net48\PixelCleanerPro.exe
+C:\Users\MrPixel555\Desktop\New folder (8)\PixelCleanerPro\bin\Debug\net48\PixelCleanerPro.pdb
+C:\Users\MrPixel555\Desktop\New folder (8)\PixelCleanerPro\obj\Debug\net48\PixelCleanerPro.exe
+C:\Users\MrPixel555\Desktop\New folder (8)\PixelCleanerPro\obj\Debug\net48\PixelCleanerPro.pdb
+F:\PixelCleanerPro\PixelCleanerPro 1.0.0.5.83\bin\Debug\net48\app.manifest
+F:\PixelCleanerPro\PixelCleanerPro 1.0.0.5.83\bin\Debug\net48\PixelCleanerPro.exe.config
+F:\PixelCleanerPro\PixelCleanerPro 1.0.0.5.83\bin\Debug\net48\PixelCleanerPro.exe
+F:\PixelCleanerPro\PixelCleanerPro 1.0.0.5.83\bin\Debug\net48\PixelCleanerPro.pdb
+F:\PixelCleanerPro\PixelCleanerPro 1.0.0.5.83\obj\Debug\net48\PixelCleanerPro.csproj.AssemblyReference.cache
+F:\PixelCleanerPro\PixelCleanerPro 1.0.0.5.83\obj\Debug\net48\PixelCleanerPro.GeneratedMSBuildEditorConfig.editorconfig
+F:\PixelCleanerPro\PixelCleanerPro 1.0.0.5.83\obj\Debug\net48\PixelCleanerPro.AssemblyInfoInputs.cache
+F:\PixelCleanerPro\PixelCleanerPro 1.0.0.5.83\obj\Debug\net48\PixelCleanerPro.AssemblyInfo.cs
+F:\PixelCleanerPro\PixelCleanerPro 1.0.0.5.83\obj\Debug\net48\PixelCleanerPro.csproj.CoreCompileInputs.cache
+F:\PixelCleanerPro\PixelCleanerPro 1.0.0.5.83\obj\Debug\net48\PixelCleanerPro.exe
+F:\PixelCleanerPro\PixelCleanerPro 1.0.0.5.83\obj\Debug\net48\PixelCleanerPro.pdb
+F:\PixelCleanerPro\PixelCleanerPro 1.0.0.6.29\bin\Debug\net48\app.manifest
+F:\PixelCleanerPro\PixelCleanerPro 1.0.0.6.29\bin\Debug\net48\app.ico
+F:\PixelCleanerPro\PixelCleanerPro 1.0.0.6.29\bin\Debug\net48\PixelCleanerPro.exe.config
+F:\PixelCleanerPro\PixelCleanerPro 1.0.0.6.29\bin\Debug\net48\PixelCleanerPro.exe
+F:\PixelCleanerPro\PixelCleanerPro 1.0.0.6.29\bin\Debug\net48\PixelCleanerPro.pdb
+F:\PixelCleanerPro\PixelCleanerPro 1.0.0.6.29\obj\Debug\net48\PixelCleanerPro.csproj.AssemblyReference.cache
+F:\PixelCleanerPro\PixelCleanerPro 1.0.0.6.29\obj\Debug\net48\PixelCleanerPro.GeneratedMSBuildEditorConfig.editorconfig
+F:\PixelCleanerPro\PixelCleanerPro 1.0.0.6.29\obj\Debug\net48\PixelCleanerPro.AssemblyInfoInputs.cache
+F:\PixelCleanerPro\PixelCleanerPro 1.0.0.6.29\obj\Debug\net48\PixelCleanerPro.AssemblyInfo.cs
+F:\PixelCleanerPro\PixelCleanerPro 1.0.0.6.29\obj\Debug\net48\PixelCleanerPro.csproj.CoreCompileInputs.cache
+F:\PixelCleanerPro\PixelCleanerPro 1.0.0.6.29\obj\Debug\net48\PixelCleanerPro.exe
+F:\PixelCleanerPro\PixelCleanerPro 1.0.0.6.29\obj\Debug\net48\PixelCleanerPro.pdb
