@@ -1,31 +1,74 @@
-# PixelCleaner Pro
-PixelCleaner Pro is a Windows application for managing and cleaning system cache files, developed with C# and WinForms. This application helps users identify, manage, and clean temporary files and system cache.
-Main features:
-# 1. System scan:
-o Search for cache files in default paths (AppData, Temp, etc.)
-o Ability to add custom paths
-o Identify cache files based on name patterns (cache, tmp, temp, etc.)
-# 2. File management:
-o Display a list of cache files with details (name, size, associated program, path, and modification date)
-o Ability to select files to clean
-o Filter by program and minimum size
-# 3. Visual features:
-o Pie chart to display the distribution of file sizes by programs
-o Dark and light theme support
-o Progress bar to display scan status
-# 4. Security:
-o Need to run with Administrator access
-o Logging of operations
-# 5. Other features:
-o Ability to export reports to CSV format
-o Display scan errors (in developer mode)
-o Log console for debugging
-• .NET Framework 4.8
-• Windows Forms
-• System.Windows.Forms.DataVisualization for charts
-# Notes:
-• The application uses the async pattern for scanning operations so that the UI does not block.
-• Optimal memory management with GC.Collect while scanning large files.
-• Responsive UI using Invoke to update the UI from other threads.
-This program is useful for users who want to free up disk space by cleaning temporary and cache files, or developers who want to check the cache files of various applications.
+# 🧹 PixelCleaner Pro - Advanced System Cache Manager
 
+![Windows](https://img.shields.io/badge/Windows-10%2F11-0078D6?logo=windows) 
+![.NET](https://img.shields.io/badge/.NET%20Framework-4.8-512BD4?logo=dotnet) 
+![License](https://img.shields.io/badge/License-MIT-green)
+
+**PixelCleaner Pro** is a powerful Windows utility developed in C#/WinForms that helps optimize your system by safely cleaning cache and temporary files.
+
+## ✨ Key Features
+
+### 🔍 Smart Scanning
+- **Comprehensive detection** of cache files in:
+  - System paths (AppData, Temp, etc.)
+  - Custom user-defined locations
+- **Pattern recognition** for cache files (`cache`, `tmp`, `temp`, `log`, etc.)
+- **Program association** - Automatically identifies source applications
+
+### 🗂️ File Management
+- **Detailed file listing** with:
+  - File name and size
+  - Associated program
+  - Full path
+  - Last modified date
+- **Advanced filtering**:
+  - By application
+  - Minimum file size threshold
+- **Bulk operations** with select-all functionality
+
+### 📊 Visualization Tools
+- **Interactive pie chart** showing file distribution
+- **Dark/Light themes** for comfortable usage
+- **Real-time progress tracking**
+
+### 🔒 Security Features
+- **Admin privilege verification**
+- **Comprehensive logging** (operations saved to `PixelCleaner.log`)
+- **Safe deletion protocol** with confirmation dialogs
+
+### 🛠️ Technical Specifications
+
+
+## 🚀 Getting Started
+
+1. **Download** the latest release
+2. **Run as Administrator** (required for system access)
+3. **Scan** your system
+4. **Review** found files
+5. **Clean** selected items
+
+## 📦 Additional Features
+- **CSV export** for detailed reports
+- **Developer mode** for error diagnostics
+- **Memory optimization** during large scans
+
+## 💻 System Requirements
+| Component | Requirement |
+|-----------|-------------|
+| OS        | Windows 10/11 |
+| RAM       | 2GB+        |
+| Privilege | Administrator |
+| Disk Space| 50MB free   |
+
+## ⚠️ Important Notes
+- First scan may take longer while building the file index
+- Some game cache files might show as false positives
+- Always review files before deletion
+
+## 🌟 Why PixelCleaner Pro?
+- **Lightweight** - No installation needed
+- **Efficient** - Optimized scanning algorithms
+- **Transparent** - Detailed file information
+- **Safe** - Never deletes critical system files
+
+> 💡 **Tip**: Use the size filter to quickly locate large temporary files!
