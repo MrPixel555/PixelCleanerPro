@@ -39,7 +39,7 @@
 
 ## 🚀 Getting Started
 
-1. **Download** the latest release
+1. **Download** the ![latest release](https://github.com/MrPixel555/PixelCleanerPro/releases/tag/Realese)
 2. **Run as Administrator** (required for system access)
 3. **Scan** your system
 4. **Review** found files
