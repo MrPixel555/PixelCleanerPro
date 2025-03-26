@@ -36,8 +36,6 @@
 - **Comprehensive logging** (operations saved to `PixelCleaner.log`)
 - **Safe deletion protocol** with confirmation dialogs
 
-### 🛠️ Technical Specifications
-
 
 ## 🚀 Getting Started
 
