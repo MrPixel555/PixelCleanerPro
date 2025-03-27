@@ -1,0 +1,80 @@
+{
+  "format": 1,
+  "restore": {
+<<<<<<< HEAD
+    "F:\\PixelCleanerPro\\PixelCleanerPro 1.0.0.7.45\\PixelCleanerPro.csproj": {}
+  },
+  "projects": {
+    "F:\\PixelCleanerPro\\PixelCleanerPro 1.0.0.7.45\\PixelCleanerPro.csproj": {
+      "version": "1.0.7",
+      "restore": {
+        "projectUniqueName": "F:\\PixelCleanerPro\\PixelCleanerPro 1.0.0.7.45\\PixelCleanerPro.csproj",
+        "projectName": "PixelCleanerPro",
+        "projectPath": "F:\\PixelCleanerPro\\PixelCleanerPro 1.0.0.7.45\\PixelCleanerPro.csproj",
+        "packagesPath": "C:\\Users\\MrPixel555\\.nuget\\packages\\",
+        "outputPath": "F:\\PixelCleanerPro\\PixelCleanerPro 1.0.0.7.45\\obj\\",
+=======
+    "F:\\PixelCleanerPro\\PixelCleanerPro 1.0.0.6.29\\PixelCleanerPro.csproj": {}
+  },
+  "projects": {
+    "F:\\PixelCleanerPro\\PixelCleanerPro 1.0.0.6.29\\PixelCleanerPro.csproj": {
+      "version": "1.0.6",
+      "restore": {
+        "projectUniqueName": "F:\\PixelCleanerPro\\PixelCleanerPro 1.0.0.6.29\\PixelCleanerPro.csproj",
+        "projectName": "PixelCleanerPro",
+        "projectPath": "F:\\PixelCleanerPro\\PixelCleanerPro 1.0.0.6.29\\PixelCleanerPro.csproj",
+        "packagesPath": "C:\\Users\\MrPixel555\\.nuget\\packages\\",
+        "outputPath": "F:\\PixelCleanerPro\\PixelCleanerPro 1.0.0.6.29\\obj\\",
+>>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\MrPixel555\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win7-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

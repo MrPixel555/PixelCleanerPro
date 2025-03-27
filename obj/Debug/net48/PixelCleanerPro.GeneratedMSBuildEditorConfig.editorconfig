@@ -1,0 +1,15 @@
+is_global = true
+build_property.ApplicationManifest = app.manifest
+build_property.StartupObject = 
+build_property.ApplicationDefaultFont = 
+build_property.ApplicationHighDpiMode = 
+build_property.ApplicationUseCompatibleTextRendering = 
+build_property.ApplicationVisualStyles = 
+build_property.RootNamespace = PixelCleanerPro
+<<<<<<< HEAD
+build_property.ProjectDir = F:\PixelCleanerPro\PixelCleanerPro 1.0.0.7.45\
+=======
+build_property.ProjectDir = F:\PixelCleanerPro\PixelCleanerPro 1.0.0.6.29\
+>>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
