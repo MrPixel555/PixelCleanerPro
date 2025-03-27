@@ -1,9 +1,15 @@
 {
   "version": 2,
 <<<<<<< HEAD
+<<<<<<< HEAD
   "dgSpecHash": "eos1CCGL51uAyUTAcjMi/3w+GWbICult2Pap39Ne+mLcZyU9EomdtqzdOsy3LA/QVmhkWfW+9Y4IoASfs4U2vg==",
   "success": true,
   "projectFilePath": "F:\\PixelCleanerPro\\PixelCleanerPro 1.0.0.7.45\\PixelCleanerPro.csproj",
+=======
+  "dgSpecHash": "+fs7Rm2+B3eJVniPHGlP7jhTr/g60dTEK5pMDd6MqIVlI203ha+QviYKQ2/0/Mw+h4esQcP4cY/JiPKhoooU/Q==",
+  "success": true,
+  "projectFilePath": "F:\\PixelCleanerPro\\PixelCleanerPro 1.0.0.6.29\\PixelCleanerPro.csproj",
+>>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
 =======
   "dgSpecHash": "+fs7Rm2+B3eJVniPHGlP7jhTr/g60dTEK5pMDd6MqIVlI203ha+QviYKQ2/0/Mw+h4esQcP4cY/JiPKhoooU/Q==",
   "success": true,

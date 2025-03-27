@@ -2,6 +2,7 @@
   "format": 1,
   "restore": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "F:\\PixelCleanerPro\\PixelCleanerPro 1.0.0.7.45\\PixelCleanerPro.csproj": {}
   },
   "projects": {
@@ -14,6 +15,8 @@
         "packagesPath": "C:\\Users\\MrPixel555\\.nuget\\packages\\",
         "outputPath": "F:\\PixelCleanerPro\\PixelCleanerPro 1.0.0.7.45\\obj\\",
 =======
+=======
+>>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
     "F:\\PixelCleanerPro\\PixelCleanerPro 1.0.0.6.29\\PixelCleanerPro.csproj": {}
   },
   "projects": {
@@ -25,6 +28,9 @@
         "projectPath": "F:\\PixelCleanerPro\\PixelCleanerPro 1.0.0.6.29\\PixelCleanerPro.csproj",
         "packagesPath": "C:\\Users\\MrPixel555\\.nuget\\packages\\",
         "outputPath": "F:\\PixelCleanerPro\\PixelCleanerPro 1.0.0.6.29\\obj\\",
+<<<<<<< HEAD
+>>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
+=======
 >>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
         "projectStyle": "PackageReference",
         "fallbackFolders": [
