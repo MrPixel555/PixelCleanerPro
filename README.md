@@ -3,7 +3,7 @@
 ![Windows](https://img.shields.io/badge/Windows-10%2F11-0078D6?logo=windows) 
 ![.NET](https://img.shields.io/badge/.NET%20Framework-4.8-512BD4?logo=dotnet) 
 ![License](https://img.shields.io/badge/License-MIT-green)
-[![Latest Release](https://img.shields.io/badge/Latest_Release-1.0.0.6.29-blue)](https://github.com/MrPixel555/PixelCleanerPro/releases/tag/Realese)
+[![Latest Release](https://img.shields.io/badge/Latest_Release-1.0.0.7.45-blue)](https://github.com/MrPixel555/PixelCleanerPro/releases/tag/Realese_2)
 
 **PixelCleaner Pro** is a powerful Windows utility developed in C#/WinForms that helps optimize your system by safely cleaning cache and temporary files.
 
@@ -40,7 +40,7 @@
 
 ## 🚀 Getting Started
 
-1. **Download** the [![Latest Release](https://img.shields.io/badge/Latest_Release-1.0.0.7.45-blue)](https://github.com/MrPixel555/PixelCleanerPro/releases/tag/Realese)
+1. **Download** the [![Latest Release](https://img.shields.io/badge/Latest_Release-1.0.0.7.45-blue)](https://github.com/MrPixel555/PixelCleanerPro/releases/tag/Realese_2)
 2. **Run as Administrator** (required for system access)
 3. **Scan** your system
 4. **Review** found files
