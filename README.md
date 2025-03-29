@@ -40,7 +40,7 @@
 
 ## 🚀 Getting Started
 
-1. **Download** the [![Latest Release](https://img.shields.io/badge/Latest_Release-1.0.0.6.29-blue)](https://github.com/MrPixel555/PixelCleanerPro/releases/tag/Realese)
+1. **Download** the [![Latest Release](https://img.shields.io/badge/Latest_Release-1.0.0.7.45-blue)](https://github.com/MrPixel555/PixelCleanerPro/releases/tag/Realese)
 2. **Run as Administrator** (required for system access)
 3. **Scan** your system
 4. **Review** found files
