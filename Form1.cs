@@ -2,30 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-<<<<<<< HEAD
-<<<<<<< HEAD
-using System.Drawing;
-=======
 using System.Threading;
 using System.Drawing;
 using System.Security.Principal;
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
-=======
-using System.Threading;
-using System.Drawing;
-using System.Security.Principal;
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
 using System.Drawing.Drawing2D;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
-<<<<<<< HEAD
-<<<<<<< HEAD
-using System.Security.Principal;
-=======
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
-=======
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
@@ -43,52 +26,27 @@ namespace PixelCleanerPro
         private Button exportButton;
         private Button settingsButton;
         private CheckBox darkModeCheck;
+        private CheckBox selectAllCheck;
         private ComboBox filterProgramCombo;
         private NumericUpDown minSizeFilter;
         private Chart sizeChart;
         private CheckBox developerLogsCheck;
-<<<<<<< HEAD
-<<<<<<< HEAD
-        private CheckBox selectAllCheck;
-
-=======
         
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
-=======
-        
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
         private List<CacheFile> cacheFiles = new List<CacheFile>();
         private List<string> scanErrors = new List<string>();
         private string[] customPaths = Array.Empty<string>();
         private string logFilePath = Path.Combine(Application.StartupPath, "PixelCleanerLog.txt");
         private volatile bool isCancelled;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
         [DllImport("kernel32.dll", SetLastError = true)]
         [return: MarshalAs(UnmanagedType.Bool)]
         private static extern bool AllocConsole();
 
-<<<<<<< HEAD
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
-=======
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
         public Form1()
         {
             if (!IsRunningAsAdministrator())
             {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                MessageBox.Show("This application requires Administrator privileges to run.", "Administrator Required", MessageBoxButtons.OK, MessageBoxIcon.Error);
-=======
                 MessageBox.Show("This application requires Administrator privileges to run. Please run it as an Administrator.", "Administrator Required", MessageBoxButtons.OK, MessageBoxIcon.Error);
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
-=======
-                MessageBox.Show("This application requires Administrator privileges to run. Please run it as an Administrator.", "Administrator Required", MessageBoxButtons.OK, MessageBoxIcon.Error);
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
                 Environment.Exit(1);
             }
 
@@ -133,8 +91,8 @@ namespace PixelCleanerPro
             }
         }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
+
         private void InitializeUI()
         {
             this.Text = "PixelCleaner Pro (1.0.0.7.45)";
@@ -360,107 +318,7 @@ namespace PixelCleanerPro
             };
             return button;
         }
-=======
-=======
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
-private void InitializeUI()
-{
-    this.Text = "PixelCleaner Pro (1.0.0.6.29)";
-    this.Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath);
-    this.Size = new Size(1230, 540);
-    this.StartPosition = FormStartPosition.CenterScreen;
-    this.MaximizeBox = false;
-    this.FormBorderStyle = FormBorderStyle.FixedSingle;
 
-    progressBar = new ProgressBar { Location = new Point(10, 10), Width = 1195, Height = 20 };
-    
-    statusLabel = new Label { Location = new Point(10, 35), Width = 400, Text = "Status: Ready" };
-    totalSizeLabel = new Label { Location = new Point(420, 35), Width = 200, Text = "Total Size: 0 MB" };
-
-    var selectAllCheck = new CheckBox 
-    { 
-        Text = "Select All", 
-        Location = new Point(10, 60), 
-        Width = 100 
-    };
-    selectAllCheck.CheckedChanged += SelectAllCheck_CheckedChanged;
-
-    cacheListView = new ListView
-    {
-        Location = new Point(10, 85),
-        Size = new Size(760, 363),
-        View = View.Details,
-        CheckBoxes = true,
-        FullRowSelect = true
-    };
-    cacheListView.Columns.AddRange(new ColumnHeader[]
-    {
-        new ColumnHeader { Text = "File Name", Width = 150 },
-        new ColumnHeader { Text = "Size (MB)", Width = 80 },
-        new ColumnHeader { Text = "Program", Width = 150 },
-        new ColumnHeader { Text = "Path", Width = 275 },
-        new ColumnHeader { Text = "Last Modified", Width = 100 }
-    });
-
-    sizeChart = new Chart
-    {
-        Location = new Point(800, 60),
-        Size = new Size(400, 400),
-        ChartAreas = { new ChartArea("MainArea") },
-        Series = { new Series("CacheSize") { 
-            ChartType = SeriesChartType.Pie,
-            IsValueShownAsLabel = false
-        }}
-    };
-
-    scanButton = new Button { Text = "Scan", Location = new Point(10, 470), Width = 100 };
-    cleanButton = new Button { Text = "Clean", Location = new Point(120, 470), Width = 100 };
-    exportButton = new Button { Text = "Export Report", Location = new Point(230, 470), Width = 100 };
-    settingsButton = new Button { Text = "Add Folder", Location = new Point(340, 470), Width = 100 };
-    darkModeCheck = new CheckBox { Text = "Dark Mode", Location = new Point(450, 470), Width = 100 };
-    developerLogsCheck = new CheckBox { Text = "Developer Logs", Location = new Point(450, 450), Width = 110 };
-    filterProgramCombo = new ComboBox { Location = new Point(560, 470), Width = 150, DropDownStyle = ComboBoxStyle.DropDownList };
-    minSizeFilter = new NumericUpDown { Location = new Point(720, 470), Width = 80, Minimum = 0, Maximum = 10000 };
-
-    this.Controls.AddRange(new Control[] {
-        progressBar, statusLabel, totalSizeLabel, selectAllCheck, cacheListView, sizeChart,
-        scanButton, cleanButton, exportButton, settingsButton, darkModeCheck,
-        developerLogsCheck, filterProgramCombo, minSizeFilter,
-        new Label { Text = "Min Size (MB):", Location = new Point(720, 450), Width = 100 }
-    });
-
-    scanButton.Click += ScanButton_Click;
-    cleanButton.Click += CleanButton_Click;
-    exportButton.Click += ExportButton_Click;
-    settingsButton.Click += SettingsButton_Click;
-    darkModeCheck.CheckedChanged += DarkModeCheck_CheckedChanged;
-    filterProgramCombo.SelectedIndexChanged += FilterProgramCombo_SelectedIndexChanged;
-    minSizeFilter.ValueChanged += MinSizeFilter_ValueChanged;
-    sizeChart.PostPaint += DrawCustomPieLabels;
-
-    var chartToolTip = new ToolTip();
-    sizeChart.MouseMove += (s, e) => {
-        var hitTest = sizeChart.HitTest(e.X, e.Y);
-        if (hitTest?.ChartElementType == ChartElementType.DataPoint && hitTest.PointIndex >= 0)
-        {
-            var point = sizeChart.Series["CacheSize"].Points[hitTest.PointIndex];
-            chartToolTip.SetToolTip(sizeChart, point.ToolTip);
-        }
-        else
-        {
-            chartToolTip.SetToolTip(sizeChart, "");
-        }
-    };
-
-    ApplyTheme(false);
-}
-
-
-
-<<<<<<< HEAD
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
-=======
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
 
         private void DrawCustomPieLabels(object sender, ChartPaintEventArgs e)
         {
@@ -482,48 +340,13 @@ private void InitializeUI()
                 float midAngle = startAngle + sweepAngle / 2;
 
                 point.ToolTip = $"{point.LegendText}\nSize: {point.YValues[0]:F2}MB\nPercent: {(point.YValues[0] / sizeChart.Series["CacheSize"].Points.Sum(p => p.YValues[0]) * 100):F1}%";
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
                 
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
-=======
-                
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
                 float textRadius = radius * 0.5f;
                 float textX = centerX + textRadius * (float)Math.Cos(midAngle * Math.PI / 180);
                 float textY = centerY + textRadius * (float)Math.Sin(midAngle * Math.PI / 180);
 
                 string labelText = $"{point.YValues[0]:F1}MB\n{(point.YValues[0] / sizeChart.Series["CacheSize"].Points.Sum(p => p.YValues[0]) * 100):F0}%";
                 float fontSize = CalculateAdaptiveFontSize(sweepAngle, labelText.Length);
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-                using (Font font = new Font("Segoe UI", fontSize, FontStyle.Bold))
-                using (Brush textBrush = new SolidBrush(darkModeCheck.Checked ? Color.White : Color.FromArgb(31, 31, 31)))
-                {
-                    SizeF textSize = graphics.MeasureString(labelText, font);
-                    GraphicsState state = graphics.Save();
-                    graphics.TranslateTransform(textX, textY);
-                    graphics.RotateTransform(midAngle > 180 ? midAngle + 180 : midAngle);
-                    graphics.DrawString(
-                        labelText,
-                        font,
-                        textBrush,
-                        new RectangleF(-textSize.Width / 2, -textSize.Height / 2, textSize.Width, textSize.Height),
-                        new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center }
-                    );
-                    graphics.Restore(state);
-                }
-
-                startAngle += sweepAngle;
-            }
-        }
-
-=======
-=======
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
                 
                 using Font font = new Font("Segoe UI", fontSize, FontStyle.Bold);
                 using Brush textBrush = new SolidBrush(darkModeCheck.Checked ? Color.White : Color.Black);
@@ -544,10 +367,6 @@ private void InitializeUI()
                 startAngle += sweepAngle;
             }
         }
-<<<<<<< HEAD
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
-=======
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
         private float CalculateAdaptiveFontSize(float sweepAngle, int textLength)
         {
             float baseSize = sweepAngle / 5f;
@@ -649,18 +468,8 @@ private void InitializeUI()
                 Path.GetTempPath()
             };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-            var excludedSubPaths = new[] {
-                "Application Data",
-=======
             var excludedSubPaths = new[] { 
                 "Application Data", 
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
-=======
-            var excludedSubPaths = new[] { 
-                "Application Data", 
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
                 "Local Settings",
                 "ElevatedDiagnostics",
                 "History",
@@ -739,28 +548,14 @@ private void InitializeUI()
             {
                 scanErrors.Add($"Memory error: {ex.Message}");
                 LogMessage($"Memory error: {ex.Message}");
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
                 LogMessage($"Memory error: {ex.Message}");
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
-=======
-                LogMessage($"Memory error: {ex.Message}");
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
                 UpdateStatus("Error: Memory limit exceeded");
             }
             catch (Exception ex)
             {
                 scanErrors.Add($"General error: {ex.Message}");
                 LogMessage($"General error: {ex.Message}");
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
                 LogMessage($"General error: {ex.Message}");
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
-=======
-                LogMessage($"General error: {ex.Message}");
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
                 UpdateStatus("Error processing files");
             }
             finally
@@ -793,14 +588,7 @@ private void InitializeUI()
                 {
                     int progress = totalFiles > 0 ? Math.Min(100, (int)((processedFiles / (double)totalFiles) * 100)) : 0;
                     UpdateProgress(progress, $"Scanning: {processedFiles} of {totalFiles} files");
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
                     
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
-=======
-                    
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
                     GC.Collect();
                     LogMessage($"Processed {processedFiles} files. Memory usage: {GC.GetTotalMemory(false)/1024/1024} MB");
                 }
@@ -853,15 +641,7 @@ private void InitializeUI()
                 {
                     ShowErrorForm();
                 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
                 
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
-=======
-                
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
                 scanButton.Enabled = true;
             }
             catch (Exception ex)
@@ -877,19 +657,9 @@ private void InitializeUI()
                 Text = "Scan Errors",
                 Size = new Size(600, 400),
                 StartPosition = FormStartPosition.CenterParent,
-<<<<<<< HEAD
-<<<<<<< HEAD
-                FormBorderStyle = FormBorderStyle.FixedSingle
-=======
                 FormBorderStyle = FormBorderStyle.FixedSingle,
                 MaximizeBox = false,
                 MinimizeBox = false
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
-=======
-                FormBorderStyle = FormBorderStyle.FixedSingle,
-                MaximizeBox = false,
-                MinimizeBox = false
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
             };
 
             TextBox errorTextBox = new TextBox
@@ -898,16 +668,7 @@ private void InitializeUI()
                 ScrollBars = ScrollBars.Vertical,
                 Dock = DockStyle.Fill,
                 ReadOnly = true,
-<<<<<<< HEAD
-<<<<<<< HEAD
-                Font = new Font("Segoe UI", 10F),
-                BorderStyle = BorderStyle.None
-=======
                 Font = new Font("Segoe UI", 10)
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
-=======
-                Font = new Font("Segoe UI", 10)
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
             };
 
             errorTextBox.Text = string.Join(Environment.NewLine, scanErrors);
@@ -920,29 +681,12 @@ private void InitializeUI()
         {
             if (isDarkMode)
             {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                form.BackColor = Color.FromArgb(32, 32, 32);
-                form.ForeColor = Color.FromArgb(230, 230, 230);
-=======
                 form.BackColor = Color.FromArgb(30, 30, 30);
                 form.ForeColor = Color.FromArgb(220, 220, 220);
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
-=======
-                form.BackColor = Color.FromArgb(30, 30, 30);
-                form.ForeColor = Color.FromArgb(220, 220, 220);
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
                 foreach (Control control in form.Controls)
                 {
                     if (control is TextBox textBox)
                     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                        textBox.BackColor = Color.FromArgb(50, 50, 50);
-                        textBox.ForeColor = Color.FromArgb(230, 230, 230);
-=======
-=======
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
                         textBox.BackColor = Color.FromArgb(45, 45, 45);
                         textBox.ForeColor = Color.FromArgb(220, 220, 220);
                         textBox.BorderStyle = BorderStyle.FixedSingle;
@@ -956,38 +700,18 @@ private void InitializeUI()
                     {
                         control.BackColor = Color.FromArgb(30, 30, 30);
                         control.ForeColor = Color.FromArgb(220, 220, 220);
-<<<<<<< HEAD
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
-=======
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
                     }
                 }
             }
             else
             {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                form.BackColor = Color.FromArgb(242, 243, 244);
-                form.ForeColor = Color.FromArgb(31, 31, 31);
-=======
                 form.BackColor = SystemColors.Control;
                 form.ForeColor = SystemColors.ControlText;
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
-=======
-                form.BackColor = SystemColors.Control;
-                form.ForeColor = SystemColors.ControlText;
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
                 foreach (Control control in form.Controls)
                 {
                     if (control is TextBox textBox)
                     {
                         textBox.BackColor = Color.White;
-<<<<<<< HEAD
-<<<<<<< HEAD
-                        textBox.ForeColor = Color.FromArgb(31, 31, 31);
-=======
-=======
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
                         textBox.ForeColor = Color.Black;
                         textBox.BorderStyle = BorderStyle.FixedSingle;
                     }
@@ -1000,10 +724,6 @@ private void InitializeUI()
                     {
                         control.BackColor = SystemColors.Control;
                         control.ForeColor = SystemColors.ControlText;
-<<<<<<< HEAD
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
-=======
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
                     }
                 }
             }
@@ -1013,60 +733,6 @@ private void InitializeUI()
         {
             if (isDarkMode)
             {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                this.BackColor = Color.FromArgb(32, 32, 32);
-                progressBar.BackColor = Color.FromArgb(50, 50, 50);
-                progressBar.ForeColor = Color.FromArgb(0, 204, 106);
-                statusLabel.ForeColor = Color.FromArgb(230, 230, 230);
-                totalSizeLabel.ForeColor = Color.FromArgb(230, 230, 230);
-                cacheListView.BackColor = Color.FromArgb(50, 50, 50);
-                cacheListView.ForeColor = Color.FromArgb(230, 230, 230);
-                sizeChart.BackColor = Color.FromArgb(32, 32, 32);
-                sizeChart.ChartAreas[0].BackColor = Color.FromArgb(32, 32, 32);
-                scanButton.BackColor = Color.FromArgb(0, 204, 106);
-                cleanButton.BackColor = Color.FromArgb(0, 204, 106);
-                exportButton.BackColor = Color.FromArgb(0, 204, 106);
-                settingsButton.BackColor = Color.FromArgb(0, 204, 106);
-                darkModeCheck.ForeColor = Color.FromArgb(230, 230, 230);
-                developerLogsCheck.ForeColor = Color.FromArgb(230, 230, 230);
-                selectAllCheck.ForeColor = Color.FromArgb(230, 230, 230);
-                filterProgramCombo.BackColor = Color.FromArgb(50, 50, 50);
-                filterProgramCombo.ForeColor = Color.FromArgb(230, 230, 230);
-                minSizeFilter.BackColor = Color.FromArgb(50, 50, 50);
-                minSizeFilter.ForeColor = Color.FromArgb(230, 230, 230);
-            }
-            else
-            {
-                this.BackColor = Color.FromArgb(242, 243, 244);
-                progressBar.BackColor = Color.FromArgb(225, 225, 225);
-                progressBar.ForeColor = Color.FromArgb(0, 120, 215);
-                statusLabel.ForeColor = Color.FromArgb(31, 31, 31);
-                totalSizeLabel.ForeColor = Color.FromArgb(31, 31, 31);
-                cacheListView.BackColor = Color.White;
-                cacheListView.ForeColor = Color.FromArgb(31, 31, 31);
-                sizeChart.BackColor = Color.FromArgb(242, 243, 244);
-                sizeChart.ChartAreas[0].BackColor = Color.FromArgb(242, 243, 244);
-                scanButton.BackColor = Color.FromArgb(0, 120, 215);
-                cleanButton.BackColor = Color.FromArgb(0, 120, 215);
-                exportButton.BackColor = Color.FromArgb(0, 120, 215);
-                settingsButton.BackColor = Color.FromArgb(0, 120, 215);
-                darkModeCheck.ForeColor = Color.FromArgb(31, 31, 31);
-                developerLogsCheck.ForeColor = Color.FromArgb(31, 31, 31);
-                selectAllCheck.ForeColor = Color.FromArgb(31, 31, 31);
-                filterProgramCombo.BackColor = Color.White;
-                filterProgramCombo.ForeColor = Color.FromArgb(31, 31, 31);
-                minSizeFilter.BackColor = Color.White;
-                minSizeFilter.ForeColor = Color.FromArgb(31, 31, 31);
-            }
-            foreach (Control control in this.Controls)
-            {
-                if (control is Label label && label != statusLabel && label != totalSizeLabel)
-                {
-                    label.ForeColor = isDarkMode ? Color.FromArgb(230, 230, 230) : Color.FromArgb(31, 31, 31);
-=======
-=======
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
                 this.BackColor = Color.FromArgb(30, 30, 30);
                 this.ForeColor = Color.FromArgb(220, 220, 220);
                 progressBar.BackColor = Color.FromArgb(45, 45, 45);
@@ -1145,17 +811,13 @@ private void InitializeUI()
                         label.BackColor = SystemColors.Control;
                         label.ForeColor = SystemColors.ControlText;
                     }
-<<<<<<< HEAD
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
-=======
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
                 }
             }
         }
 
         private void SelectAllCheck_CheckedChanged(object sender, EventArgs e)
         {
-            var checkBox = sender as CheckBox;
+            var checkBox = sender as CheckBox ?? selectAllCheck;
             if (checkBox == null) return;
 
             foreach (ListViewItem item in cacheListView.Items)
@@ -1182,15 +844,7 @@ private void InitializeUI()
                 {
                     ScanCompleted();
                 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-            }, TaskCreationOptions.LongRunning);
-=======
             }, CancellationToken.None, TaskCreationOptions.LongRunning, TaskScheduler.Default);
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
-=======
-            }, CancellationToken.None, TaskCreationOptions.LongRunning, TaskScheduler.Default);
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
         }
 
         private void UpdateDisplay()
@@ -1220,46 +874,19 @@ private void InitializeUI()
                 string selectedProgram = filterProgramCombo.SelectedItem?.ToString() ?? "All Programs";
 
                 var filteredFiles = cacheFiles
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    .Where(f => (minSize == 0 || f.SizeMB >= minSize) &&
-                                (selectedProgram == null || selectedProgram == "All Programs" || f.Program == selectedProgram))
-=======
                     .Where(f => 
                         (minSize == 0 || f.SizeMB >= minSize) &&
                         (selectedProgram == null || selectedProgram == "All Programs" || f.Program == selectedProgram))
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
-=======
-                    .Where(f => 
-                        (minSize == 0 || f.SizeMB >= minSize) &&
-                        (selectedProgram == null || selectedProgram == "All Programs" || f.Program == selectedProgram))
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
                     .OrderByDescending(f => f.SizeMB);
 
                 foreach (var cache in filteredFiles)
                 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    var item = new ListViewItem(new[]
-                    {
-                        cache.FileName ?? "Unknown",
-                        cache.SizeMB.ToString("F2"),
-                        cache.Program ?? "Unknown",
-                        cache.FullPath ?? "Unknown",
-                        cache.LastModified.ToString("yyyy-MM-dd HH:mm")
-=======
-=======
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
                     var item = new ListViewItem(new[] { 
                         cache.FileName ?? "Unknown", 
                         cache.SizeMB.ToString("F2"), 
                         cache.Program ?? "Unknown", 
                         cache.FullPath ?? "Unknown", 
                         cache.LastModified.ToString("yyyy-MM-dd HH:mm") 
-<<<<<<< HEAD
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
-=======
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
                     });
                     cacheListView.Items.Add(item);
                 }
@@ -1319,15 +946,7 @@ private void InitializeUI()
                 int failCount = 0;
                 foreach (var file in selectedFiles)
                 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    try
-=======
                     try 
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
-=======
-                    try 
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
                     {
                         if (File.Exists(file))
                         {
@@ -1340,15 +959,7 @@ private void InitializeUI()
                             failCount++;
                             LogMessage($"File not found: {file}");
                         }
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    }
-=======
                     } 
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
-=======
-                    } 
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
                     catch (UnauthorizedAccessException)
                     {
                         failCount++;
@@ -1420,15 +1031,7 @@ private void InitializeUI()
         private void InitializeComponent()
         {
             this.SuspendLayout();
-<<<<<<< HEAD
-<<<<<<< HEAD
-            this.ClientSize = new Size(1200, 500);
-=======
             this.ClientSize = new System.Drawing.Size(1200, 500);
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
-=======
-            this.ClientSize = new System.Drawing.Size(1200, 500);
->>>>>>> 6e36e7699602eda7d07db44dfa42a9b51711edac
             this.Name = "Form1";
             this.ResumeLayout(false);
         }
